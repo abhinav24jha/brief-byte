@@ -1,17 +1,22 @@
 import React from "react";
-
-import { logo } from "../assets";
+import { IoDocumentText } from "react-icons/io5";
 
 const Hero = () => {
   return (
     <header className='w-full flex justify-center items-center flex-col'>
       <nav className='flex justify-between items-center w-full mb-10 pt-3'>
-        <img src={logo} alt='sumz_logo' className='w-28 object-contain' />
-
+        
+        <div>
+          <div className="text-white flex items-center">
+            <IoDocumentText/>
+            <p className="text-white text-xl font-bold ml-1">BriefByte</p>
+          </div>
+        </div>
+        
         <button
           type='button'
           onClick={() =>
-            window.open("https://github.com/TidbitsJS/Summize", "_blank")
+            window.open("https://github.com/abhinav24jha", "_blank")
           }
           className='black_btn'
         >
@@ -24,8 +29,7 @@ const Hero = () => {
         <span className='orange_gradient '>OpenAI GPT-4</span>
       </h1>
       <h2 className='desc'>
-        Simplify your reading with Summize, an open-source article summarizer
-        that transforms lengthy articles into clear and concise summaries
+        Enhance your reading experience with BriefByte, an open-source article summarizer designed to condense lengthy articles into clear and concise summaries.
       </h2>
     </header>
   );
